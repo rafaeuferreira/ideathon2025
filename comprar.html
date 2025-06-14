@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Insumo - ReUse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/new_logo.png">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/new_logo.png" alt="ReUse Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="descarte.html">Descartar Resíduo</a></li>
+                    <li><a href="gerenciamento.html">Gerenciamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="service-page">
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-header">
+                    <img src="images/service2_icon.png" alt="Comprar Insumo" class="service-icon-large">
+                    <div class="service-title">
+                        <h1>Comprar Insumo</h1>
+                        <p>Encontre insumos reciclados de qualidade para sua produção</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="marketplace">
+            <div class="container">
+                <h2>Categorias de Insumos</h2>
+                <p class="marketplace-subtitle">Selecione a categoria que melhor atende sua necessidade</p>
+                
+                <div class="categories-grid">
+                    <div class="category-card" data-category="solventes">
+                        <div class="category-icon">🧪</div>
+                        <h3>Solventes Orgânicos</h3>
+                        <p>Acetona, etanol, tolueno e outros solventes para reprocessamento</p>
+                        <span class="category-count">12 ofertas disponíveis</span>
+                    </div>
+
+                    <div class="category-card" data-category="tintas">
+                        <div class="category-icon">🎨</div>
+                        <h3>Tintas e Vernizes</h3>
+                        <p>Subprodutos de tintas, vernizes e resinas para nova formulação</p>
+                        <span class="category-count">8 ofertas disponíveis</span>
+                    </div>
+
+                    <div class="category-card" data-category="limpeza">
+                        <div class="category-icon">🧽</div>
+                        <h3>Produtos de Limpeza</h3>
+                        <p>Ingredientes ativos e surfactantes para produtos de limpeza</p>
+                        <span class="category-count">15 ofertas disponíveis</span>
+                    </div>
+
+                    <div class="category-card" data-category="acidos">
+                        <div class="category-icon">⚗️</div>
+                        <h3>Ácidos e Bases</h3>
+                        <p>Ácidos e bases para neutralização e processos industriais</p>
+                        <span class="category-count">6 ofertas disponíveis</span>
+                    </div>
+
+                    <div class="category-card" data-category="metais">
+                        <div class="category-icon">🔩</div>
+                        <h3>Metais Pesados</h3>
+                        <p>Recuperação de metais preciosos e materiais metálicos</p>
+                        <span class="category-count">4 ofertas disponíveis</span>
+                    </div>
+
+                    <div class="category-card" data-category="polimeros">
+                        <div class="category-icon">🔗</div>
+                        <h3>Polímeros</h3>
+                        <p>Resinas, plásticos e polímeros para reciclagem</p>
+                        <span class="category-count">9 ofertas disponíveis</span>
+                    </div>
+                </div>
+
+                <div class="filters-section">
+                    <h3>Filtros Avançados</h3>
+                    <div class="filters-container">
+                        <div class="filter-group">
+                            <label>Localização</label>
+                            <select>
+                                <option value="">Todos os estados</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="PR">Paraná</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label>Quantidade Mínima (kg)</label>
+                            <input type="number" placeholder="Ex: 100" min="1">
+                        </div>
+
+                        <div class="filter-group">
+                            <label>Pureza Mínima (%)</label>
+                            <input type="number" placeholder="Ex: 80" min="1" max="100">
+                        </div>
+
+                        <div class="filter-group">
+                            <label>Preço Máximo (R$/kg)</label>
+                            <input type="number" placeholder="Ex: 50" min="0" step="0.01">
+                        </div>
+
+                        <button class="btn-primary filter-btn">Aplicar Filtros</button>
+                    </div>
+                </div>
+
+                <div class="results-section" id="results-section" style="display: none;">
+                    <h3>Resultados da Busca</h3>
+                    <div class="results-grid" id="results-grid">
+                        <!-- Resultados serão inseridos aqui via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="images/new_logo.png" alt="ReUse Logo" class="logo-img small">
+                </div>
+                <p>Conectando resíduos a recursos para um futuro sustentável.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ReUse. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

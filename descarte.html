@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descartar Resíduo - ReUse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/new_logo.png">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/new_logo.png" alt="ReUse Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="comprar.html">Comprar Insumo</a></li>
+                    <li><a href="gerenciamento.html">Gerenciamento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="service-page">
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-header">
+                    <img src="images/service1_icon.png" alt="Descartar Resíduo" class="service-icon-large">
+                    <div class="service-title">
+                        <h1>Descartar Resíduo</h1>
+                        <p>Cadastre seus resíduos químicos de forma segura e encontre compradores qualificados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-form">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Cadastrar Resíduo para Descarte</h2>
+                    
+                    <form class="waste-form">
+                        <div class="form-section">
+                            <h3>Informações Básicas do Resíduo</h3>
+                            
+                            <div class="form-group">
+                                <label>Tipo de Resíduo *</label>
+                                <select required>
+                                    <option value="">Selecione o tipo...</option>
+                                    <option value="solventes">Solventes Orgânicos</option>
+                                    <option value="tintas">Tintas e Vernizes</option>
+                                    <option value="limpeza">Produtos de Limpeza</option>
+                                    <option value="acidos">Ácidos</option>
+                                    <option value="bases">Bases</option>
+                                    <option value="metais">Metais Pesados</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Quantidade (kg) *</label>
+                                    <input type="number" required min="1" placeholder="Ex: 500">
+                                </div>
+                                <div class="form-group">
+                                    <label>Estado Físico *</label>
+                                    <select required>
+                                        <option value="">Selecione...</option>
+                                        <option value="liquido">Líquido</option>
+                                        <option value="solido">Sólido</option>
+                                        <option value="pastoso">Pastoso</option>
+                                        <option value="gasoso">Gasoso</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Características de Segurança</h3>
+                            
+                            <div class="form-group">
+                                <label>Classificação de Periculosidade *</label>
+                                <select required>
+                                    <option value="">Selecione...</option>
+                                    <option value="classe1">Classe I - Perigoso</option>
+                                    <option value="classe2a">Classe II-A - Não Inerte</option>
+                                    <option value="classe2b">Classe II-B - Inerte</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Características de Periculosidade</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" value="inflamavel"> Inflamável
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" value="corrosivo"> Corrosivo
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" value="toxico"> Tóxico
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" value="reativo"> Reativo
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" value="patogenico"> Patogênico
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Setor de Origem *</label>
+                                <select required>
+                                    <option value="">Selecione o setor...</option>
+                                    <option value="quimica">Química e Petroquímica</option>
+                                    <option value="farmaceutica">Farmacêutica</option>
+                                    <option value="tintas">Tintas e Vernizes</option>
+                                    <option value="metalurgica">Metalúrgica</option>
+                                    <option value="textil">Têxtil</option>
+                                    <option value="alimenticia">Alimentícia</option>
+                                    <option value="laboratorio">Laboratório</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Localização e Logística</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Estado *</label>
+                                    <select required>
+                                        <option value="">Selecione...</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <!-- Adicionar outros estados -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Cidade *</label>
+                                    <input type="text" required placeholder="Nome da cidade">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Condições de Armazenamento</label>
+                                <textarea placeholder="Descreva como o resíduo está armazenado (temperatura, embalagem, etc.)"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Informações da Empresa</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Nome da Empresa *</label>
+                                    <input type="text" required placeholder="Razão social">
+                                </div>
+                                <div class="form-group">
+                                    <label>CNPJ *</label>
+                                    <input type="text" required placeholder="00.000.000/0000-00">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Responsável Técnico *</label>
+                                    <input type="text" required placeholder="Nome completo">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email de Contato *</label>
+                                    <input type="email" required placeholder="contato@empresa.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Telefone *</label>
+                                <input type="tel" required placeholder="(11) 99999-9999">
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Documentação</h3>
+                            
+                            <div class="form-group">
+                                <label>Possui FDSR (Ficha com Dados de Segurança de Resíduos)? *</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="fdsr" value="sim" required> Sim
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="fdsr" value="nao" required> Não
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Observações Adicionais</label>
+                                <textarea placeholder="Informações complementares sobre o resíduo, processo de geração, etc."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn-secondary">Salvar Rascunho</button>
+                            <button type="submit" class="btn-primary">Cadastrar Resíduo</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="images/new_logo.png" alt="ReUse Logo" class="logo-img small">
+                </div>
+                <p>Conectando resíduos a recursos para um futuro sustentável.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ReUse. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
